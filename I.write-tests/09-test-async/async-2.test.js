@@ -14,4 +14,12 @@ test("gets a list of repositories names (with mock)", function() {
   });
 });
 
-test("a more deterministic test", function() {});
+test("a more deterministic test", async () => {
+  fetcher.mockResolvedValue([{ name: "js-exercises" }]);
+  var url = "https://api.github.com/users/kabaros/repos";
+
+  // act
+  const result = await getRepos(url);
+  // assert
+  expect(result).toContain("js-exercises");
+});
