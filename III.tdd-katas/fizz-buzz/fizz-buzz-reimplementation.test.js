@@ -1,4 +1,4 @@
-var fizzbuzz = require("./fizz-buzz");
+var fizzbuzz = require("./fizz-buzz-reimplementation");
 
 test("prints 1", function() {
   var result = fizzbuzz(1);
