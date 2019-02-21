@@ -1,16 +1,6 @@
 function removeVowels(word) {
   var characters = word.split("");
-  //const vowelLetters = ["a", "A","o","O","i","I","e","E","u","U","y","Y"];
   var result = [];
-
-  //   characters.forEach(function(character) {
-  //    // if (vowelLetters.includes(character))
-  //    if (vowelLetters.includes(character)) {
-  //       result.push("");
-  //     } else {
-  //       result.push(character.toLowerCase());
-  //     }
-  //   });
   characters.forEach(function(character) {
     character = character.toLowerCase();
     if (
@@ -26,7 +16,6 @@ function removeVowels(word) {
       result.push(character);
     }
   });
-  console.log(characters);
   return result.join("");
 }
 
@@ -37,5 +26,5 @@ module.exports = removeVowels;
 
   var result = removeVowels('samuel');
 
-  what is the value of result?
+  what is the value of result? The value of the result is "sml"
 */
